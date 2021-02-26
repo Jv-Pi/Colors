@@ -9,27 +9,7 @@
 </head>
 
 <body>
-    <script>
-        /* window.setInterval('setRandomColor()', 3000); */
-        window.onload = setRandomColor;
-
-        /* Generetion Colors  */
-
-        function getRandomColor() {
-            var letters = '0123456789ABCDEF';
-            var color = '#';
-            for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        /* Randomize Colors  */
-
-        function setRandomColor() {
-            $("body").css("background-color", getRandomColor());
-        }
-    </script>
+    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 
