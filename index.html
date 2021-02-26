@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Colors</title>
+    <link rel="shortcut icon" href="https://www.flaticon.com/svg/vstatic/svg/1832/1832054.svg?token=exp=1614364832~hmac=6ece9ebc8732b67772ee589f9ac2ca7a" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        /* window.setInterval('setRandomColor()', 3000); */
+        window.onload = setRandomColor;
+
+        /* Generetion Colors  */
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        /* Randomize Colors  */
+
+        function setRandomColor() {
+            $("body").css("background-color", getRandomColor());
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+
+</html>
